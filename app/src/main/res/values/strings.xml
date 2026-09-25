@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DroidSpec</string>
+
+    <!-- Common -->
+    <string name="common_not_available">Not available</string>
+    <string name="common_restricted">Restricted by Android</string>
+    <string name="common_unknown">Unknown</string>
+    <string name="common_refresh">Refresh</string>
+    <string name="common_cancel">Cancel</string>
+    <string name="common_start">Start</string>
+    <string name="common_close">Close</string>
+    <string name="common_loading">Loading…</string>
+    <string name="common_error_generic">Something went wrong</string>
+    <string name="common_none">None</string>
+    <string name="common_na">N/A</string>
+    <string name="common_copied">Copied</string>
+    <string name="common_enabled">Enabled</string>
+    <string name="common_disabled">Disabled</string>
+    <string name="common_supported">Supported</string>
+    <string name="common_not_supported">Not supported</string>
+    <string name="common_calculated">Calculated from exposed sensor/output characteristics</string>
+    <string name="common_estimated_by_android">Estimated by Android</string>
+
+    <!-- Navigation -->
+    <string name="nav_dashboard">Dashboard</string>
+    <string name="nav_device">Device</string>
+    <string name="nav_cpu">CPU</string>
+    <string name="nav_gpu">GPU</string>
+    <string name="nav_memory">Memory</string>
+    <string name="nav_storage">Storage</string>
+    <string name="nav_battery">Battery</string>
+    <string name="nav_thermal">Thermal</string>
+    <string name="nav_display">Display</string>
+    <string name="nav_camera">Camera</string>
+    <string name="nav_sensors">Sensors</string>
+    <string name="nav_network">Network</string>
+    <string name="nav_refurb">Refurb check</string>
+    <string name="nav_tests">Hardware tests</string>
+    <string name="test_screen">Screen test</string>
+    <string name="test_screen_desc">Full-screen solid colors to reveal dead or stuck pixels</string>
+    <string name="test_touch">Touch test</string>
+    <string name="test_touch_desc">Shows every simultaneous touch point and tracks the maximum</string>
+    <string name="test_vibrate">Vibration motor</string>
+    <string name="test_vibrate_desc">Fires a real haptic pulse</string>
+    <string name="test_vibrate_run">Vibrate 0.5 s</string>
+    <string name="test_tone">Speaker tone</string>
+    <string name="test_tone_desc">Plays a test beep through the speaker</string>
+    <string name="test_tone_run">Play beep</string>
+    <string name="test_fps">Real FPS meter</string>
+    <string name="test_fps_desc">Counts actually rendered frames over 2 seconds</string>
+    <string name="test_fps_run">Measure</string>
+    <string name="test_fps_result">Rendered: %1$.1f FPS</string>
+    <string name="test_start">Start</string>
+    <string name="test_exit">Exit</string>
+    <string name="test_tap_next">Tap for next color — %1$d/%2$d</string>
+    <string name="test_touch_count">Pointers: %1$d · max: %2$d</string>
+    <string name="test_gpu">GPU triangle test</string>
+    <string name="test_gpu_desc">Renders 2,400 rotating triangles with hand-written GLES shaders on an offscreen surface</string>
+    <string name="test_gpu_run">Run (2s)</string>
+    <string name="test_gpu_result">%1$.1f FPS · %2$d tris/frame</string>
+    <string name="test_memlat">Memory latency</string>
+    <string name="test_memlat_desc">Random pointer-chase that defeats the cache prefetcher</string>
+    <string name="test_memlat_run">Measure</string>
+    <string name="test_memlat_result">%1$.1f ns/access</string>
+    <string name="test_iops">Storage 4K random I/O</string>
+    <string name="test_iops_desc">Real fsync write then read IOPS on a 32 MB test file</string>
+    <string name="test_iops_run">Run (4s)</string>
+    <string name="test_iops_result">W %1$.0f · R %2$.0f IOPS</string>
+    <string name="test_throttle">Thermal throttling probe</string>
+    <string name="test_throttle_desc">8 s sustained load with per-chunk frequency sampling</string>
+    <string name="test_throttle_run">Start (8s)</string>
+    <string name="test_throttle_result">%1$.0f → %2$.0f MHz (−%3$d%%)</string>
+    <string name="test_throttle_na">Frequency not exposed by the kernel</string>
+    <string name="test_note">Tests run fully offline. The vibration test uses the install-time VIBRATE permission only.</string>
+    <string name="refurb_title">Refurbishment check</string>
+    <string name="refurb_overall">Overall result</string>
+    <string name="refurb_touch">Touch controller</string>
+    <string name="refurb_display">Display panel</string>
+    <string name="refurb_display_size">Physical screen size</string>
+    <string name="refurb_battery">Battery wear</string>
+    <string name="refurb_usb">Charging port</string>
+    <string name="refurb_camera">Cameras</string>
+    <string name="status_ok">OK</string>
+    <string name="status_genuine">No replacement indicators</string>
+    <string name="status_suspicious">Replacement indicators found</string>
+    <string name="status_unknown">Cannot verify</string>
+    <string name="refurb_score">Trust score</string>
+    <string name="refurb_risk_low">Low replacement risk</string>
+    <string name="refurb_risk_med">Moderate replacement risk</string>
+    <string name="refurb_risk_high">High replacement risk</string>
+    <string name="refurb_suspicious_count">%1$d flagged</string>
+    <string name="refurb_unknown_count">%1$d unverifiable</string>
+    <string name="refurb_items_summary">%1$d checks · %2$d need attention</string>
+    <string name="refurb_fingerprint">Fingerprint sensor</string>
+    <string name="refurb_microphone">Microphone</string>
+    <string name="refurb_speaker">Speaker</string>
+    <string name="refurb_vibrator">Vibration motor</string>
+    <string name="refurb_charger">Charger type</string>
+    <string name="refurb_disclaimer">These are heuristic indicators from hardware data that Android exposes. They cannot prove a part is original or replaced — only a certified service center can confirm that. Expected-component comparisons come from a small labeled local database and may not cover every variant.</string>
+    <string name="nav_live_monitor">Live Monitor</string>
+    <string name="nav_benchmark">Benchmark</string>
+    <string name="nav_reports">Reports</string>
+    <string name="nav_search">Search</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Dashboard -->
+    <string name="dash_device_header">Device</string>
+    <string name="dash_android_version">Android %1$s (API %2$d)</string>
+    <string name="dash_battery_card">Battery</string>
+    <string name="dash_cpu_card">CPU</string>
+    <string name="dash_ram_card">RAM</string>
+    <string name="dash_storage_card">Storage</string>
+    <string name="dash_temperature_card">Temperature</string>
+    <string name="dash_health_card">System Health</string>
+    <string name="dash_health_good">All monitored signals look normal</string>
+    <string name="dash_health_warning">Some signals need attention</string>
+    <string name="dash_charging">Charging</string>
+    <string name="dash_discharging">Discharging</string>
+    <string name="dash_full">Full</string>
+    <string name="dash_battery_state_unknown">State unknown</string>
+
+    <!-- Device / Android system -->
+    <string name="dev_section_device">Device</string>
+    <string name="dev_section_android">Android system</string>
+    <string name="label_manufacturer">Manufacturer</string>
+    <string name="label_brand">Brand</string>
+    <string name="label_model">Model</string>
+    <string name="label_device">Device codename</string>
+    <string name="label_product">Product</string>
+    <string name="label_board">Board</string>
+    <string name="label_hardware">Hardware</string>
+    <string name="label_bootloader">Bootloader</string>
+    <string name="label_baseband">Baseband</string>
+    <string name="label_android_version">Android version</string>
+    <string name="label_api_level">API level</string>
+    <string name="label_security_patch">Security patch level</string>
+    <string name="label_build_id">Build ID</string>
+    <string name="label_build_fingerprint">Build fingerprint</string>
+    <string name="label_kernel">Kernel version</string>
+    <string name="label_architecture">Architecture</string>
+    <string name="label_abis">Supported ABIs</string>
+    <string name="label_uptime">Uptime</string>
+    <string name="label_deep_sleep">Deep sleep since boot</string>
+    <string name="label_density_bucket">Density bucket</string>
+    <string name="label_release_year">Release year</string>
+    <string name="label_build_date">System build date</string>
+    <string name="uptime_format">%1$d days, %2$d h, %3$d min</string>
+    <string name="release_year_value">%1$d (estimate — local database)</string>
+    <string name="dev_selinux">SELinux status</string>
+    <string name="dev_boots">Boot count</string>
+    <string name="dev_interactive">Screen currently</string>
+    <string name="dev_screen_on">On</string>
+    <string name="dev_screen_off">Off</string>
+    <string name="dev_idle">Device idle (Doze)</string>
+    <string name="label_root_indicator">Root indicator</string>
+    <string name="root_heuristic_present">Possible root artifacts detected (non-authoritative)</string>
+    <string name="root_heuristic_absent">No common root artifacts detected (not a guarantee)</string>
+    <string name="section_title_processor">Processor</string>
+    <string name="section_title_memory">Memory</string>
+    <string name="section_title_power">Power</string>
+    <string name="section_title_graphics">Graphics</string>
+    <string name="section_title_connectivity">Connectivity</string>
+
+    <!-- CPU -->
+    <string name="cpu_name">CPU</string>
+    <string name="cpu_cores">Cores</string>
+    <string name="cpu_abi">ABI</string>
+    <string name="cpu_current_freq">Current frequency</string>
+    <string name="cpu_min_freq">Minimum frequency</string>
+    <string name="cpu_max_freq">Maximum frequency</string>
+    <string name="cpu_usage">CPU usage</string>
+    <string name="cpu_per_core">Per-core</string>
+    <string name="cpu_visual_note">Illustrative graphic — not a photograph of your actual chip.</string>\n    <string name="cpu_marketing">Marketing name (local database)</string>
+    <string name="cpu_freq_note">Kernel frequency access may be restricted on this device</string>
+
+    <!-- GPU -->
+    <string name="gpu_renderer">Renderer</string>
+    <string name="gpu_vendor">Vendor</string>
+    <string name="gpu_gles_version">OpenGL ES version</string>
+    <string name="gpu_vulkan">Vulkan</string>
+    <string name="gpu_extensions">Extensions</string>
+    <string name="gpu_ext_count">Count</string>
+    <string name="gpu_ext_count_value">%1$d</string>
+    <string name="gpu_context_note">Renderer information is read through a temporary OpenGL ES context</string>
+
+    <!-- RAM -->
+    <string name="ram_total">Total RAM</string>
+    <string name="ram_available">Available RAM</string>
+    <string name="ram_used">Used RAM</string>
+    <string name="ram_usage">RAM usage</string>
+    <string name="ram_low_memory">Low memory</string>
+    <string name="ram_threshold">Low-memory threshold</string>
+
+    <!-- Storage -->
+    <string name="storage_total">Total storage</string>
+    <string name="storage_used">Used storage</string>
+    <string name="storage_free">Free storage</string>
+    <string name="storage_usage">Storage usage</string>
+    <string name="storage_external">External storage</string>
+    <string name="storage_no_external">No removable or adoptable storage detected</string>
+    <string name="storage_type">Type</string>
+    <string name="storage_removable">Removable (SD)</string>
+    <string name="storage_emulated">Emulated</string>
+    <string name="storage_note">Measured on the internal shared storage partition. Personal files are never scanned.</string>
+
+    <!-- Battery -->
+    <string name="batt_percent">Battery level</string>
+    <string name="batt_status">Status</string>
+    <string name="batt_source">Charging source</string>
+    <string name="batt_temperature">Battery temperature</string>
+    <string name="batt_voltage">Voltage</string>
+    <string name="batt_current">Current (now)</string>
+    <string name="batt_power">Charging power (V×I)</string>
+    <string name="batt_technology">Technology</string>
+    <string name="batt_health">Health (as reported by Android)</string>
+    <string name="batt_capacity">Design capacity estimate</string>
+    <string name="batt_remaining">Charge remaining (fuel gauge)</string>
+    <string name="batt_saver">Battery saver</string>
+    <string name="batt_health_good">Good</string>
+    <string name="batt_health_overheat">Overheating</string>
+    <string name="batt_health_dead">Dead</string>
+    <string name="batt_health_over_voltage">Over voltage</string>
+    <string name="batt_health_unspecified">Unspecified failure</string>
+    <string name="batt_health_cold">Cold</string>
+    <string name="batt_health_unknown">Unknown</string>
+    <string name="batt_source_usb">USB</string>
+    <string name="batt_source_ac">AC adapter</string>
+    <string name="batt_source_wireless">Wireless</string>
+    <string name="batt_source_other">Other</string>
+    <string name="batt_status_charging">Charging</string>
+    <string name="batt_status_discharging">Discharging</string>
+    <string name="batt_status_full">Full</string>
+    <string name="batt_status_not_charging">Not charging</string>
+    <string name="batt_health_note">Android does not expose a scientifically exact battery-health percentage. Values above are only what the system reports.</string>
+
+    <!-- Thermal -->
+    <string name="thermal_battery">Battery</string>
+    <string name="thermal_ambient">Ambient sensor</string>
+    <string name="thermal_zones">Thermal zones (kernel)</string>
+    <string name="thermal_zone_type">Type</string>
+    <string name="thermal_zone_temp">Temperature</string>
+    <string name="thermal_severity">Severity</string>
+    <string name="severity_normal">Normal</string>
+    <string name="severity_warm">Warm</string>
+    <string name="severity_hot">Hot</string>
+    <string name="severity_critical">Critical</string>
+    <string name="thermal_note">Severity is an application-level indicator based on configurable thresholds. It is not a universal safety standard. CPU/GPU temperatures are only shown when the kernel exposes them.</string>
+    <string name="thermal_thresholds">Thresholds (°C): warm %1$.0f · hot %2$.0f · critical %3$.0f</string>
+    <string name="thermal_no_data">No temperature source is exposed on this device</string>
+
+    <!-- Display -->
+    <string name="disp_resolution">Resolution</string>
+    <string name="disp_density">Density</string>
+    <string name="disp_dpi">Density (dpi)</string>
+    <string name="disp_refresh">Refresh rate</string>
+    <string name="disp_smallest">Smallest width</string>
+    <string name="disp_dark">Dark theme now</string>
+    <string name="disp_font_scale">Font scale</string>
+    <string name="disp_modes">Supported display modes</string>
+    <string name="disp_hdr">HDR capabilities</string>
+    <string name="disp_size">Physical size (estimated)</string>
+    <string name="disp_orientation">Orientation</string>
+    <string name="disp_orientation_portrait">Portrait</string>
+    <string name="disp_orientation_landscape">Landscape</string>
+    <string name="disp_orientation_square">Square</string>
+    <string name="disp_orientation_undefined">Undefined</string>
+    <string name="disp_hdr_none">No HDR types reported</string>
+
+    <!-- Camera -->
+    <string name="cam_count">Number of cameras</string>
+    <string name="cam_facing">Facing</string>
+    <string name="cam_facing_front">Front</string>
+    <string name="cam_facing_back">Back</string>
+    <string name="cam_facing_external">External</string>
+    <string name="cam_facing_unknown">Unknown</string>
+    <string name="cam_sensor_size">Sensor size</string>
+    <string name="cam_resolution">Effective resolution</string>
+    <string name="cam_focal">Focal lengths</string>
+    <string name="cam_aperture">Apertures</string>
+    <string name="cam_autofocus">Autofocus</string>
+    <string name="cam_flash">Flash</string>
+    <string name="cam_outputs">Output stream sizes</string>
+
+    <!-- Sensors -->
+    <string name="sensor_available_count">Available sensors: %1$d</string>
+    <string name="sensor_name">Name</string>
+    <string name="sensor_vendor">Vendor</string>
+    <string name="sensor_version">Version</string>
+    <string name="sensor_power">Power</string>
+    <string name="sensor_resolution">Resolution</string>
+    <string name="sensor_range">Maximum range</string>
+    <string name="sensor_wakeup">Wake-up sensor</string>
+    <string name="sensor_live">Live reading</string>
+    <string name="sensor_stop_hint">The listener stops automatically when you leave this screen</string>
+    <string name="sensor_no_sensors">This device exposes no sensors via the Android API</string>
+
+    <!-- Network -->
+    <string name="net_state">Connection state</string>
+    <string name="net_connected">Connected</string>
+    <string name="net_disconnected">Disconnected</string>
+    <string name="net_type">Connection type</string>
+    <string name="net_type_wifi">Wi-Fi</string>
+    <string name="net_type_cellular">Cellular</string>
+    <string name="net_type_ethernet">Ethernet</string>
+    <string name="net_type_vpn">VPN</string>
+    <string name="net_type_other">Other</string>
+    <string name="net_link_speed">Wi-Fi link speed</string>
+    <string name="net_downstream">Downstream bandwidth (reported)</string>
+    <string name="net_metered">Metered</string>
+    <string name="net_vpn_active">VPN active</string>
+    <string name="net_bluetooth">Bluetooth</string>
+    <string name="net_nfc">NFC</string>
+    <string name="net_gps">Location hardware (GPS)</string>
+    <string name="net_usb">USB host</string>
+    <string name="net_usb_devices">USB devices connected</string>
+    <string name="net_yes">Yes</string>
+    <string name="net_no">No</string>
+
+    <!-- Live monitor -->
+    <string name="live_title">Live Monitor</string>
+    <string name="live_note">Updates use your chosen refresh interval from Settings. Monitoring stops when you leave this screen.</string>
+
+    <!-- Benchmark -->
+    <string name="bench_title">DroidSpec Internal Benchmark</string>
+    <string name="bench_warning_title">Before you start</string>
+    <string name="bench_warning_body">This is an internal, synthetic benchmark. It is NOT comparable to Geekbench, AnTuTu or 3DMark. It runs short, bounded workloads and stops automatically. You can cancel it at any time.</string>
+    <string name="bench_disclaimer">Results reflect only the methodology implemented inside DroidSpec and are intended for relative comparisons on this device.</string>
+    <string name="bench_stage_cpu">CPU test</string>
+    <string name="bench_stage_memory">Memory test</string>
+    <string name="bench_stage_storage">Storage test</string>
+    <string name="bench_result_ops">CPU throughput (ops/s)</string>
+    <string name="bench_result_mem">Memory copy (MB/s)</string>
+    <string name="bench_result_storage">Storage r/w (MB/s)</string>
+    <string name="bench_result_score">Internal score</string>
+    <string name="bench_running">Running… %1$d%%</string>
+    <string name="bench_cancelled">Benchmark cancelled</string>
+    <string name="bench_done">Benchmark finished in %1$.1f s</string>
+
+    <!-- Reports -->
+    <string name="report_title">Device Report</string>
+    <string name="report_generate">Generate report</string>
+    <string name="report_share">Share</string>
+    <string name="report_save">Save</string>
+    <string name="report_saved">Report saved to app files</string>
+    <string name="report_preview">Preview</string>
+    <string name="report_format">Format</string>
+    <string name="report_empty">Generate a report to preview and export it</string>
+    <string name="report_section_device">Device</string>
+    <string name="report_section_cpu">CPU</string>
+    <string name="report_section_gpu">GPU</string>
+    <string name="report_section_ram">RAM</string>
+    <string name="report_section_storage">Storage</string>
+    <string name="report_section_battery">Battery</string>
+    <string name="report_section_thermal">Thermal</string>
+    <string name="report_section_display">Display</string>
+    <string name="report_section_sensors">Sensors</string>
+    <string name="report_section_network">Network</string>
+
+    <!-- Search -->
+    <string name="search_hint">Search specifications…</string>
+    <string name="search_empty">Type to search across all sections (works fully offline)</string>
+    <string name="search_no_results">No results</string>
+
+    <!-- Settings -->
+    <string name="settings_appearance">Appearance</string>
+    <string name="theme_system">System</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="settings_language">Language</string>
+    <string name="lang_system">System default</string>
+    <string name="lang_english">English</string>
+    <string name="lang_arabic">العربية</string>
+    <string name="settings_monitoring">Monitoring</string>
+    <string name="settings_refresh_interval">Live refresh interval</string>
+    <string name="refresh_1s">1 second</string>
+    <string name="refresh_2s">2 seconds</string>
+    <string name="refresh_5s">5 seconds</string>
+    <string name="refresh_10s">10 seconds</string>
+    <string name="settings_reports">Reports</string>
+    <string name="settings_default_export">Default export format</string>
+    <string name="export_txt">Plain text (TXT)</string>
+    <string name="export_json">JSON</string>
+    <string name="settings_privacy">Privacy</string>
+    <string name="privacy_text">DroidSpec reads device information exclusively through public Android APIs and processes everything locally on your device. No data is uploaded, no account is required, no analytics are collected, and personal files are never accessed.</string>
+    <string name="settings_permissions">Permissions</string>
+    <string name="permissions_text">DroidSpec requests no runtime (dangerous) permissions. Only install-time network state permissions are declared, used to display connectivity status.</string>
+    <string name="settings_about">About</string>
+    <string name="about_version">Version %1$s</string>
+    <string name="about_developer">Developer</string>
+    <string name="about_developer_value">CLXV11</string>
+    <string name="about_support">Support &amp; contact</string>
+    <string name="about_installed">Installed on</string>
+    <string name="about_updated">Last updated</string>
+    <string name="about_github_url">https://github.com/CLXV11</string>
+    <string name="about_licenses">Open-source licenses</string>
+    <string name="licenses_text">Built with AndroidX, Jetpack Compose and Kotlin. All third-party components are distributed under the Apache License 2.0.</string>
+
+    <!-- Units / formatting -->
+    <string name="unit_mhz">MHz</string>
+    <string name="unit_hz">Hz</string>
+    <string name="unit_degrees_c">°C</string>
+    <string name="unit_mv">mV</string>
+    <string name="unit_ma">mA</string>
+    <string name="unit_percent">%1$d%%</string>
+    <string name="unit_fps_hz">%1$.1f Hz</string>
+    <string name="unit_power_ma">%1$.2f mA</string>
+    <string name="unit_resolution_float">%1$.2f Mpx</string>
+    <string name="unit_mbps">%1$d Mbps</string>
+    <string name="unit_kbps">%1$d kbps</string>
+    <string name="unit_inches">%1$.1f″</string>
+    <string name="megapixels_format">%1$.1f MP</string>
+    <string name="ghz_format">%1$.2f GHz</string>
+    <string name="mhz_format">%1$.0f MHz</string>
+</resources>

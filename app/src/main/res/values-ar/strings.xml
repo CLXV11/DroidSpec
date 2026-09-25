@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">DroidSpec</string>
+
+    <!-- Common -->
+    <string name="common_not_available">غير متاح</string>
+    <string name="common_restricted">مقيّد من قبل أندرويد</string>
+    <string name="common_unknown">غير معروف</string>
+    <string name="common_refresh">تحديث</string>
+    <string name="common_cancel">إلغاء</string>
+    <string name="common_start">بدء</string>
+    <string name="common_close">إغلاق</string>
+    <string name="common_loading">جارٍ التحميل…</string>
+    <string name="common_error_generic">حدث خطأ ما</string>
+    <string name="common_none">لا يوجد</string>
+    <string name="common_na">غير متاح</string>
+    <string name="common_copied">تم النسخ</string>
+    <string name="common_enabled">مفعّل</string>
+    <string name="common_disabled">معطّل</string>
+    <string name="common_supported">مدعوم</string>
+    <string name="common_not_supported">غير مدعوم</string>
+    <string name="common_calculated">محسوب من خصائص المستشعر/المخرجات المكشوفة</string>
+    <string name="common_estimated_by_android">تقدير من نظام أندرويد</string>
+
+    <!-- Navigation -->
+    <string name="nav_dashboard">الرئيسية</string>
+    <string name="nav_device">الجهاز</string>
+    <string name="nav_cpu">المعالج</string>
+    <string name="nav_gpu">الرسوميات</string>
+    <string name="nav_memory">الذاكرة</string>
+    <string name="nav_storage">التخزين</string>
+    <string name="nav_battery">البطارية</string>
+    <string name="nav_thermal">الحرارة</string>
+    <string name="nav_display">الشاشة</string>
+    <string name="nav_camera">الكاميرا</string>
+    <string name="nav_sensors">المستشعرات</string>
+    <string name="nav_network">الشبكة</string>
+    <string name="nav_refurb">فحص التصنيع</string>
+    <string name="nav_tests">اختبارات العتاد</string>
+    <string name="test_screen">اختبار الشاشة</string>
+    <string name="test_screen_desc">ألوان صلبة ملء الشاشة لكشف البكسلات الميتة أو العالقة</string>
+    <string name="test_touch">اختبار اللمس</string>
+    <string name="test_touch_desc">يعرض كل نقطة لمس متزامنة ويسجل الأقصى</string>
+    <string name="test_vibrate">محرك الاهتزاز</string>
+    <string name="test_vibrate_desc">يُطلق نبضة اهتزاز حقيقية</string>
+    <string name="test_vibrate_run">اهتزاز 0.5 ثانية</string>
+    <string name="test_tone">نغمة السماعة</string>
+    <string name="test_tone_desc">تشغيل نغمة اختبار عبر السماعة</string>
+    <string name="test_tone_run">تشغيل النغمة</string>
+    <string name="test_fps">قياس FPS الحقيقي</string>
+    <string name="test_fps_desc">يعدّ الإطارات المعروضة فعلياً خلال ثانيتين</string>
+    <string name="test_fps_run">قياس</string>
+    <string name="test_fps_result">المعروض: %1$.1f إطار/ث</string>
+    <string name="test_start">بدء</string>
+    <string name="test_exit">خروج</string>
+    <string name="test_tap_next">اضغط للون التالي — %1$d/%2$d</string>
+    <string name="test_touch_count">المؤشرات: %1$d · الأقصى: %2$d</string>
+    <string name="test_gpu">اختبار مثلثات GPU</string>
+    <string name="test_gpu_desc">يرسم 2400 مثلثاً دوّاراً بشيدرات GLES مكتوبة يدوياً على سطح مخفي</string>
+    <string name="test_gpu_run">تشغيل (ثانيتان)</string>
+    <string name="test_gpu_result">%1$.1f إطار/ث · %2$d مثلث/إطار</string>
+    <string name="test_memlat">زمن وصول الذاكرة</string>
+    <string name="test_memlat_desc">مطاردة مؤشرات عشوائية تُبطل التسريع المسبق للكاش</string>
+    <string name="test_memlat_run">قياس</string>
+    <string name="test_memlat_result">%1$.1f نانوثانية/وصول</string>
+    <string name="test_iops">قراءة/كتابة عشوائية 4K</string>
+    <string name="test_iops_desc">IOPS حقيقية بمزامنة fsync على ملف اختبار 32MB</string>
+    <string name="test_iops_run">تشغيل (4 ثوانٍ)</string>
+    <string name="test_iops_result">ك %1$.0f · ق %2$.0f IOPS</string>
+    <string name="test_throttle">كاشف الخنق الحراري</string>
+    <string name="test_throttle_desc">حمل مستمر 8 ثوانٍ مع أخذ عينات التردد</string>
+    <string name="test_throttle_run">بدء (8 ثوانٍ)</string>
+    <string name="test_throttle_result">%1$.0f ← %2$.0f مHz (−%3$d%%)</string>
+    <string name="test_throttle_na">التردد غير متاح من النواة</string>
+    <string name="test_note">تعمل الاختبارات دون اتصال بالكامل. اختبار الاهتزاز يستخدم إذن VIBRATE التثبيتي فقط.</string>
+    <string name="refurb_title">فحص إعادة التصنيع</string>
+    <string name="refurb_overall">النتيجة الإجمالية</string>
+    <string name="refurb_touch">معالج اللمس</string>
+    <string name="refurb_display">لوحة الشاشة</string>
+    <string name="refurb_display_size">الحجم الفعلي للشاشة</string>
+    <string name="refurb_battery">تآكل البطارية</string>
+    <string name="refurb_usb">منفذ الشحن</string>
+    <string name="refurb_camera">الكاميرات</string>
+    <string name="status_ok">سليم</string>
+    <string name="status_genuine">لا مؤشرات استبدال</string>
+    <string name="status_suspicious">وجدت مؤشرات استبدال</string>
+    <string name="status_unknown">تعذّر التحقق</string>
+    <string name="refurb_score">درجة الثقة</string>
+    <string name="refurb_risk_low">خطر استبدال منخفض</string>
+    <string name="refurb_risk_med">خطر استبدال متوسط</string>
+    <string name="refurb_risk_high">خطر استبدال مرتفع</string>
+    <string name="refurb_suspicious_count">%1$d مشتبه به</string>
+    <string name="refurb_unknown_count">%1$d غير قابل للتحقق</string>
+    <string name="refurb_items_summary">%1$d فحصاً · %2$d تحتاج انتباهك</string>
+    <string name="refurb_fingerprint">مستشعر البصمة</string>
+    <string name="refurb_microphone">الميكروفون</string>
+    <string name="refurb_speaker">السماعة</string>
+    <string name="refurb_vibrator">محرك الاهتزاز</string>
+    <string name="refurb_charger">نوع الشاحن</string>
+    <string name="refurb_disclaimer">هذه مؤشرات استرشادية من بيانات العتاد التي يكشفها أندرويد. لا يمكنها إثبات أصلية القطع أو استبدالها — المركز المعتمد وحده من يمكنه ذلك. مقارنات المكونات المتوقعة تأتي من قاعدة بيانات محلية صغيرة موسومة وقد لا تغطي كل المتغيرات.</string>
+    <string name="nav_live_monitor">المراقبة المباشرة</string>
+    <string name="nav_benchmark">الاختبار</string>
+    <string name="nav_reports">التقارير</string>
+    <string name="nav_search">بحث</string>
+    <string name="nav_settings">الإعدادات</string>
+
+    <!-- Dashboard -->
+    <string name="dash_device_header">الجهاز</string>
+    <string name="dash_android_version">أندرويد %1$s (واجهة %2$d)</string>
+    <string name="dash_battery_card">البطارية</string>
+    <string name="dash_cpu_card">المعالج</string>
+    <string name="dash_ram_card">الذاكرة العشوائية</string>
+    <string name="dash_storage_card">التخزين</string>
+    <string name="dash_temperature_card">الحرارة</string>
+    <string name="dash_health_card">صحة النظام</string>
+    <string name="dash_health_good">كل الإشارات المراقبة تبدو طبيعية</string>
+    <string name="dash_health_warning">بعض الإشارات تحتاج انتباهك</string>
+    <string name="dash_charging">جارٍ الشحن</string>
+    <string name="dash_discharging">يستخدم البطارية</string>
+    <string name="dash_full">مشحونة بالكامل</string>
+    <string name="dash_battery_state_unknown">الحالة غير معروفة</string>
+
+    <!-- Device / Android system -->
+    <string name="dev_section_device">الجهاز</string>
+    <string name="dev_section_android">نظام أندرويد</string>
+    <string name="label_manufacturer">الشركة المصنعة</string>
+    <string name="label_brand">العلامة التجارية</string>
+    <string name="label_model">الطراز</string>
+    <string name="label_device">اسم الجهاز الرمزي</string>
+    <string name="label_product">المنتج</string>
+    <string name="label_board">اللوحة الأم</string>
+    <string name="label_hardware">العتاد</string>
+    <string name="label_bootloader">محمّل الإقلاع</string>
+    <string name="label_baseband">نطاق الأساس</string>
+    <string name="label_android_version">إصدار أندرويد</string>
+    <string name="label_api_level">مستوى واجهة البرمجة</string>
+    <string name="label_security_patch">تصحيح الأمان</string>
+    <string name="label_build_id">معرّف البناء</string>
+    <string name="label_build_fingerprint">بصمة البناء</string>
+    <string name="label_kernel">إصدار النواة</string>
+    <string name="label_architecture">البنية</string>
+    <string name="label_abis">بنيات ABI المدعومة</string>
+    <string name="label_uptime">مدة التشغيل</string>
+    <string name="label_deep_sleep">السكون العميق منذ الإقلاع</string>
+    <string name="label_density_bucket">فئة الكثافة</string>
+    <string name="label_release_year">سنة الإطلاق</string>
+    <string name="label_build_date">تاريخ بناء النظام</string>
+    <string name="uptime_format">%1$d أيام، %2$d ساعة، %3$d دقيقة</string>
+    <string name="release_year_value">%1$d (تقدير — قاعدة بيانات محلية)</string>
+    <string name="dev_selinux">حالة SELinux</string>
+    <string name="dev_boots">عدد مرات الإقلاع</string>
+    <string name="dev_interactive">الشاشة حالياً</string>
+    <string name="dev_screen_on">تعمل</string>
+    <string name="dev_screen_off">مطفأة</string>
+    <string name="dev_idle">خمول الجهاز (Doze)</string>
+    <string name="label_root_indicator">مؤشر الجذر (Root)</string>
+    <string name="root_heuristic_present">تم رصد آثار جذر محتملة (ليست دليلاً قاطعاً)</string>
+    <string name="root_heuristic_absent">لم يتم رصد آثار جذر شائعة (ليس ضماناً)</string>
+    <string name="section_title_processor">المعالج</string>
+    <string name="section_title_memory">الذاكرة</string>
+    <string name="section_title_power">الطاقة</string>
+    <string name="section_title_graphics">الرسوميات</string>
+    <string name="section_title_connectivity">الاتصال</string>
+
+    <!-- CPU -->
+    <string name="cpu_name">المعالج</string>
+    <string name="cpu_cores">الأنوية</string>
+    <string name="cpu_abi">بنية ABI</string>
+    <string name="cpu_current_freq">التردد الحالي</string>
+    <string name="cpu_min_freq">أدنى تردد</string>
+    <string name="cpu_max_freq">أقصى تردد</string>
+    <string name="cpu_usage">استخدام المعالج</string>
+    <string name="cpu_per_core">حسب النواة</string>
+    <string name="cpu_visual_note">رسم توضيحي فقط — ليس صورة حقيقية لمعالج جهازك.</string>\n    <string name="cpu_marketing">الاسم التجاري (قاعدة بيانات محلية)</string>
+    <string name="cpu_freq_note">قد يقيّد النواة وصول الترددات على هذا الجهاز</string>
+
+    <!-- GPU -->
+    <string name="gpu_renderer">العارض</string>
+    <string name="gpu_vendor">المورّد</string>
+    <string name="gpu_gles_version">إصدار OpenGL ES</string>
+    <string name="gpu_vulkan">Vulkan</string>
+    <string name="gpu_extensions">الامتدادات</string>
+    <string name="gpu_ext_count">العدد</string>
+    <string name="gpu_ext_count_value">%1$d</string>
+    <string name="gpu_context_note">تُقرأ معلومات العارض عبر سياق OpenGL ES مؤقت</string>
+
+    <!-- RAM -->
+    <string name="ram_total">إجمالي الذاكرة</string>
+    <string name="ram_available">الذاكرة المتاحة</string>
+    <string name="ram_used">الذاكرة المستخدمة</string>
+    <string name="ram_usage">استخدام الذاكرة</string>
+    <string name="ram_low_memory">انخفاض الذاكرة</string>
+    <string name="ram_threshold">عتبة انخفاض الذاكرة</string>
+
+    <!-- Storage -->
+    <string name="storage_total">إجمالي التخزين</string>
+    <string name="storage_used">التخزين المستخدم</string>
+    <string name="storage_free">التخزين المتاح</string>
+    <string name="storage_usage">استخدام التخزين</string>
+    <string name="storage_external">التخزين الخارجي</string>
+    <string name="storage_no_external">لا يوجد تخزين قابل للإزالة أو قابل للتبني</string>
+    <string name="storage_type">النوع</string>
+    <string name="storage_removable">قابل للإزالة (SD)</string>
+    <string name="storage_emulated">محاكى</string>
+    <string name="storage_note">يُقاس على قسم التخزين الداخلي المشترك. لا يتم فحص الملفات الشخصية أبداً.</string>
+
+    <!-- Battery -->
+    <string name="batt_percent">مستوى البطارية</string>
+    <string name="batt_status">الحالة</string>
+    <string name="batt_source">مصدر الشحن</string>
+    <string name="batt_temperature">حرارة البطارية</string>
+    <string name="batt_voltage">الجهد</string>
+    <string name="batt_current">التيار (الآن)</string>
+    <string name="batt_power">قدرة الشحن (ف×أ)</string>
+    <string name="batt_technology">التقنية</string>
+    <string name="batt_health">الصحة (كما يبلّغها أندرويد)</string>
+    <string name="batt_capacity">تقدير السعة التصميمية</string>
+    <string name="batt_remaining">الشحنة المتبقية (عدّاد الطاقة)</string>
+    <string name="batt_saver">موفر البطارية</string>
+    <string name="batt_health_good">جيدة</string>
+    <string name="batt_health_overheat">ارتفاع حرارة</string>
+    <string name="batt_health_dead">مستنفدة</string>
+    <string name="batt_health_over_voltage">جهد زائد</string>
+    <string name="batt_health_unspecified">عطل غير محدد</string>
+    <string name="batt_health_cold">باردة</string>
+    <string name="batt_health_unknown">غير معروفة</string>
+    <string name="batt_source_usb">USB</string>
+    <string name="batt_source_ac">محوّل طاقة</string>
+    <string name="batt_source_wireless">لاسلكي</string>
+    <string name="batt_source_other">أخرى</string>
+    <string name="batt_status_charging">جارٍ الشحن</string>
+    <string name="batt_status_discharging">تفريغ</string>
+    <string name="batt_status_full">مشحونة بالكامل</string>
+    <string name="batt_status_not_charging">لا تشحن</string>
+    <string name="batt_health_note">لا يكشف أندرويد نسبة صحة دقيقة علمياً للبطارية. القيم أعلاه هي فقط ما يبلّغه النظام.</string>
+
+    <!-- Thermal -->
+    <string name="thermal_battery">البطارية</string>
+    <string name="thermal_ambient">مستشعر الحرارة المحيطة</string>
+    <string name="thermal_zones">مناطق الحرارة (النواة)</string>
+    <string name="thermal_zone_type">النوع</string>
+    <string name="thermal_zone_temp">الحرارة</string>
+    <string name="thermal_severity">الخطورة</string>
+    <string name="severity_normal">طبيعي</string>
+    <string name="severity_warm">دافئ</string>
+    <string name="severity_hot">ساخن</string>
+    <string name="severity_critical">حرج</string>
+    <string name="thermal_note">الخطورة مؤشر على مستوى التطبيق مبني على عتبات قابلة للتعديل، وليست معيار أمان عالمياً. تُعرض حرارة المعالج/الرسوميات فقط عندما يكشفها النواة.</string>
+    <string name="thermal_thresholds">العتبات (°م): دافئ %1$.0f · ساخن %2$.0f · حرج %3$.0f</string>
+    <string name="thermal_no_data">لا يكشف هذا الجهاز أي مصدر لدرجة الحرارة</string>
+
+    <!-- Display -->
+    <string name="disp_resolution">الدقة</string>
+    <string name="disp_density">الكثافة</string>
+    <string name="disp_dpi">الكثافة (dpi)</string>
+    <string name="disp_refresh">معدل التحديث</string>
+    <string name="disp_smallest">أصغر عرض (dp)</string>
+    <string name="disp_dark">الوضع الداكن الآن</string>
+    <string name="disp_font_scale">مقياس الخط</string>
+    <string name="disp_modes">أوضاع العرض المدعومة</string>
+    <string name="disp_hdr">قدرات HDR</string>
+    <string name="disp_size">الحجم الفعلي (تقديري)</string>
+    <string name="disp_orientation">الاتجاه</string>
+    <string name="disp_orientation_portrait">عمودي</string>
+    <string name="disp_orientation_landscape">أفقي</string>
+    <string name="disp_orientation_square">مربع</string>
+    <string name="disp_orientation_undefined">غير محدد</string>
+    <string name="disp_hdr_none">لا توجد أنواع HDR مبلّغ عنها</string>
+
+    <!-- Camera -->
+    <string name="cam_count">عدد الكاميرات</string>
+    <string name="cam_facing">الاتجاه</string>
+    <string name="cam_facing_front">أمامية</string>
+    <string name="cam_facing_back">خلفية</string>
+    <string name="cam_facing_external">خارجية</string>
+    <string name="cam_facing_unknown">غير معروف</string>
+    <string name="cam_sensor_size">حجم المستشعر</string>
+    <string name="cam_resolution">الدقة الفعلية</string>
+    <string name="cam_focal">البؤرات البؤرية</string>
+    <string name="cam_aperture">فتحات العدسة</string>
+    <string name="cam_autofocus">التركيز التلقائي</string>
+    <string name="cam_flash">الفلاش</string>
+    <string name="cam_outputs">أحجام تدفق المخرجات</string>
+
+    <!-- Sensors -->
+    <string name="sensor_available_count">المستشعرات المتاحة: %1$d</string>
+    <string name="sensor_name">الاسم</string>
+    <string name="sensor_vendor">المورّد</string>
+    <string name="sensor_version">الإصدار</string>
+    <string name="sensor_power">الاستطاقة</string>
+    <string name="sensor_resolution">الدقة</string>
+    <string name="sensor_range">أقصى مدى</string>
+    <string name="sensor_wakeup">مستشعر إيقاظ</string>
+    <string name="sensor_live">القراءة المباشرة</string>
+    <string name="sensor_stop_hint">يتوقف المستمع تلقائياً عند مغادرة هذه الشاشة</string>
+    <string name="sensor_no_sensors">لا يكشف هذا الجهاز أي مستشعرات عبر واجهة أندرويد</string>
+
+    <!-- Network -->
+    <string name="net_state">حالة الاتصال</string>
+    <string name="net_connected">متصل</string>
+    <string name="net_disconnected">غير متصل</string>
+    <string name="net_type">نوع الاتصال</string>
+    <string name="net_type_wifi">Wi-Fi</string>
+    <string name="net_type_cellular">خلوي</string>
+    <string name="net_type_ethernet">إيثرنت</string>
+    <string name="net_type_vpn">VPN</string>
+    <string name="net_type_other">أخرى</string>
+    <string name="net_link_speed">سرعة رابط Wi-Fi</string>
+    <string name="net_downstream">عرض النطاق التنزيلي (مبلّغ عنه)</string>
+    <string name="net_metered">بقياس الاستهلاك</string>
+    <string name="net_vpn_active">VPN نشط</string>
+    <string name="net_bluetooth">Bluetooth</string>
+    <string name="net_nfc">NFC</string>
+    <string name="net_gps">عتاد الموقع (GPS)</string>
+    <string name="net_usb">USB مضيف</string>
+    <string name="net_usb_devices">أجهزة USB متصلة</string>
+    <string name="net_yes">نعم</string>
+    <string name="net_no">لا</string>
+
+    <!-- Live monitor -->
+    <string name="live_title">المراقبة المباشرة</string>
+    <string name="live_note">تستخدم التحديثات الفترة المختارة من الإعدادات، وتتوقف المراقبة عند مغادرة هذه الشاشة.</string>
+
+    <!-- Benchmark -->
+    <string name="bench_title">اختبار DroidSpec الداخلي</string>
+    <string name="bench_warning_title">قبل أن تبدأ</string>
+    <string name="bench_warning_body">هذا اختبار داخلي تركيبي، وليس قابلاً للمقارنة مع Geekbench أو AnTuTu أو 3DMark. يشغّل أعباء قصيرة ومحدودة ويتوقف تلقائياً، ويمكنك إلغاؤه في أي وقت.</string>
+    <string name="bench_disclaimer">تعكس النتائج فقط المنهجية المطبقة داخل DroidSpec، وهي مخصصة للمقارنات النسبية على هذا الجهاز.</string>
+    <string name="bench_stage_cpu">اختبار المعالج</string>
+    <string name="bench_stage_memory">اختبار الذاكرة</string>
+    <string name="bench_stage_storage">اختبار التخزين</string>
+    <string name="bench_result_ops">إنتاجية المعالج (عملية/ث)</string>
+    <string name="bench_result_mem">نسخ الذاكرة (م.ب/ث)</string>
+    <string name="bench_result_storage">قراءة/كتابة التخزين (م.ب/ث)</string>
+    <string name="bench_result_score">النتيجة الداخلية</string>
+    <string name="bench_running">جارٍ التشغيل… %1$d%%</string>
+    <string name="bench_cancelled">تم إلغاء الاختبار</string>
+    <string name="bench_done">انتهى الاختبار خلال %1$.1f ث</string>
+
+    <!-- Reports -->
+    <string name="report_title">تقرير الجهاز</string>
+    <string name="report_generate">إنشاء التقرير</string>
+    <string name="report_share">مشاركة</string>
+    <string name="report_save">حفظ</string>
+    <string name="report_saved">تم حفظ التقرير في ملفات التطبيق</string>
+    <string name="report_preview">معاينة</string>
+    <string name="report_format">الصيغة</string>
+    <string name="report_empty">أنشئ تقريراً لمعاينته وتصديره</string>
+    <string name="report_section_device">الجهاز</string>
+    <string name="report_section_cpu">المعالج</string>
+    <string name="report_section_gpu">الرسوميات</string>
+    <string name="report_section_ram">الذاكرة</string>
+    <string name="report_section_storage">التخزين</string>
+    <string name="report_section_battery">البطارية</string>
+    <string name="report_section_thermal">الحرارة</string>
+    <string name="report_section_display">الشاشة</string>
+    <string name="report_section_sensors">المستشعرات</string>
+    <string name="report_section_network">الشبكة</string>
+
+    <!-- Search -->
+    <string name="search_hint">ابحث في المواصفات…</string>
+    <string name="search_empty">اكتب للبحث في كل الأقسام (يعمل دون اتصال بالكامل)</string>
+    <string name="search_no_results">لا نتائج</string>
+
+    <!-- Settings -->
+    <string name="settings_appearance">المظهر</string>
+    <string name="theme_system">النظام</string>
+    <string name="theme_light">فاتح</string>
+    <string name="theme_dark">داكن</string>
+    <string name="settings_language">اللغة</string>
+    <string name="lang_system">لغة النظام</string>
+    <string name="lang_english">الإنجليزية</string>
+    <string name="lang_arabic">العربية</string>
+    <string name="settings_monitoring">المراقبة</string>
+    <string name="settings_refresh_interval">فترة التحديث المباشر</string>
+    <string name="refresh_1s">ثانية واحدة</string>
+    <string name="refresh_2s">ثانيتان</string>
+    <string name="refresh_5s">٥ ثوانٍ</string>
+    <string name="refresh_10s">١٠ ثوانٍ</string>
+    <string name="settings_reports">التقارير</string>
+    <string name="settings_default_export">صيغة التصدير الافتراضية</string>
+    <string name="export_txt">نص عادي (TXT)</string>
+    <string name="export_json">JSON</string>
+    <string name="settings_privacy">الخصوصية</string>
+    <string name="privacy_text">يقرأ DroidSpec معلومات الجهاز حصرياً عبر واجهات أندرويد العامة ويعالج كل شيء محلياً على جهازك. لا يتم رفع أي بيانات، ولا يلزم حساب، ولا تُجمع أي تحليلات، ولا يتم الوصول إلى الملفات الشخصية أبداً.</string>
+    <string name="settings_permissions">الأذونات</string>
+    <string name="permissions_text">لا يطلب DroidSpec أي أذونات خطيرة. فقط أذونات حالة الشبكة المثبتة مع التطبيق والمستخدمة لعرض حالة الاتصال.</string>
+    <string name="settings_about">حول</string>
+    <string name="about_version">الإصدار %1$s</string>
+    <string name="about_developer">المطوّر</string>
+    <string name="about_developer_value">CLXV11</string>
+    <string name="about_support">الدعم والتواصل</string>
+    <string name="about_installed">تاريخ التثبيت</string>
+    <string name="about_updated">آخر تحديث</string>
+    <string name="about_github_url">https://github.com/CLXV11</string>
+    <string name="about_licenses">التراخيص مفتوحة المصدر</string>
+    <string name="licenses_text">بُني باستخدام AndroidX وJetpack Compose وKotlin. جميع المكونات الخارجية موزعة تحت رخصة Apache 2.0.</string>
+
+    <!-- Units / formatting -->
+    <string name="unit_mhz">MHz</string>
+    <string name="unit_hz">Hz</string>
+    <string name="unit_degrees_c">°م</string>
+    <string name="unit_mv">mV</string>
+    <string name="unit_ma">mA</string>
+    <string name="unit_percent">%1$d%%</string>
+    <string name="unit_fps_hz">%1$.1f Hz</string>
+    <string name="unit_power_ma">%1$.2f mA</string>
+    <string name="unit_resolution_float">%1$.2f م.بكسل</string>
+    <string name="unit_mbps">%1$d Mbps</string>
+    <string name="unit_kbps">%1$d kbps</string>
+    <string name="unit_inches">%1$.1f″</string>
+    <string name="megapixels_format">%1$.1f م.بكسل</string>
+    <string name="ghz_format">%1$.2f GHz</string>
+    <string name="mhz_format">%1$.0f MHz</string>
+</resources>
