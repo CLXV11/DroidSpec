@@ -1,4 +1,4 @@
-VvV<div align="center">
+VVvV<div align="center">
 
 # DroidSpec
 
