@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- AppCompat descendant is REQUIRED because MainActivity is an AppCompatActivity
+         (AppCompatDelegate drives the English/Arabic per-app locale switching). -->
+    <style name="Theme.DroidSpec" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">?android:attr/colorBackground</item>
+    </style>
+</resources>

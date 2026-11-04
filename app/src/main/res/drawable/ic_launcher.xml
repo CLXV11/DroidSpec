@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- pins -->
+    <path android:fillColor="#252F4A" android:pathData="M28.7,11h2.6v8h-2.6Z M27.7,18.5h4.6v5.5h-4.6Z M40.7,11h2.6v8h-2.6Z M39.7,18.5h4.6v5.5h-4.6Z M52.7,11h2.6v8h-2.6Z M51.7,18.5h4.6v5.5h-4.6Z M64.7,11h2.6v8h-2.6Z M63.7,18.5h4.6v5.5h-4.6Z M76.7,11h2.6v8h-2.6Z M75.7,18.5h4.6v5.5h-4.6Z M28.7,89h2.6v8h-2.6Z M27.7,84h4.6v5.5h-4.6Z M40.7,89h2.6v8h-2.6Z M39.7,84h4.6v5.5h-4.6Z M52.7,89h2.6v8h-2.6Z M51.7,84h4.6v5.5h-4.6Z M64.7,89h2.6v8h-2.6Z M63.7,84h4.6v5.5h-4.6Z M76.7,89h2.6v8h-2.6Z M75.7,84h4.6v5.5h-4.6Z M11,28.7h8v2.6h-8Z M18.5,27.7h5.5v4.6h-5.5Z M11,40.7h8v2.6h-8Z M18.5,39.7h5.5v4.6h-5.5Z M11,52.7h8v2.6h-8Z M18.5,51.7h5.5v4.6h-5.5Z M11,64.7h8v2.6h-8Z M18.5,63.7h5.5v4.6h-5.5Z M11,76.7h8v2.6h-8Z M18.5,75.7h5.5v4.6h-5.5Z M89,28.7h8v2.6h-8Z M84,27.7h5.5v4.6h-5.5Z M89,40.7h8v2.6h-8Z M84,39.7h5.5v4.6h-5.5Z M89,52.7h8v2.6h-8Z M84,51.7h5.5v4.6h-5.5Z M89,64.7h8v2.6h-8Z M84,63.7h5.5v4.6h-5.5Z M89,76.7h8v2.6h-8Z M84,75.7h5.5v4.6h-5.5Z" />
+
+    <!-- chip body -->
+    <path android:fillColor="#252F4A" android:pathData="M24,24h60v60h-60Z" />
+
+    <!-- die: base + light diagonal -->
+    <path android:fillColor="#ED8E42" android:pathData="M30,30h48v48h-48Z" />
+    <path android:fillColor="#F7AD68" android:pathData="M30,30h48L30,78Z" />
+
+    <!-- dashed inner border -->
+    <path android:fillColor="#F8BE82" android:pathData="M37.2,35.5h4.6v1.7h-4.6Z M37.2,70.8h4.6v1.7h-4.6Z M35.5,37.2h1.7v4.6h-1.7Z M70.8,37.2h1.7v4.6h-1.7Z M44.800000000000004,35.5h4.6v1.7h-4.6Z M44.800000000000004,70.8h4.6v1.7h-4.6Z M35.5,44.800000000000004h1.7v4.6h-1.7Z M70.8,44.800000000000004h1.7v4.6h-1.7Z M52.400000000000006,35.5h4.6v1.7h-4.6Z M52.400000000000006,70.8h4.6v1.7h-4.6Z M35.5,52.400000000000006h1.7v4.6h-1.7Z M70.8,52.400000000000006h1.7v4.6h-1.7Z M60.0,35.5h4.6v1.7h-4.6Z M60.0,70.8h4.6v1.7h-4.6Z M35.5,60.0h1.7v4.6h-1.7Z M70.8,60.0h1.7v4.6h-1.7Z M67.6,35.5h4.6v1.7h-4.6Z M67.6,70.8h4.6v1.7h-4.6Z M35.5,67.6h1.7v4.6h-1.7Z M70.8,67.6h1.7v4.6h-1.7Z" />
+
+    <!-- 2x2 core tiles + diagonal shading -->
+    <path android:fillColor="#F9C48F" android:pathData="M40.5,40.5h11.5v11.5h-11.5Z M56,40.5h11.5v11.5h-11.5Z M40.5,56h11.5v11.5h-11.5Z M56,56h11.5v11.5h-11.5Z" />
+    <path android:fillColor="#EFA960" android:pathData="M56,40.5h11.5L56,52.0Z M40.5,56h11.5L40.5,67.5Z" />
+</vector>
