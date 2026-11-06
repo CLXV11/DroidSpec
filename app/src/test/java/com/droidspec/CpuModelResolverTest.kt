@@ -9,7 +9,7 @@ class CpuModelResolverTest {
     @Test
     fun knownIdentifiers() {
         assertEquals("Snapdragon 865", CpuModelResolver.resolve("Qualcomm Technologies, Inc SM8250"))
-        assertEquals("Snapdragon 662/665", CpuModelResolver.resolve("Qualcomm Technologies, Inc BENGAL"))
+        assertEquals("Snapdragon 662-665", CpuModelResolver.resolve("Qualcomm Technologies, Inc BENGAL"))
         assertEquals("Helio G90", CpuModelResolver.resolve("MT6785V/CC"))
         assertEquals("Exynos 990", CpuModelResolver.resolve("exynos990"))
     }
